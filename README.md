@@ -11,7 +11,7 @@ pip install -r requirements.txt
 ## Train GAT on cora
 
 ```bash
-python training_script_quora.py --should_visualize --should_test --enable_tensorboard
+python training_script_cora.py --should_visualize --should_test --enable_tensorboard
 ```
 
 ## Reference
