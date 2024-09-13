@@ -20,8 +20,8 @@ def plot_in_out_degree_distributions(edge_index, num_of_nodes, dataset_name):
         edge_index = convert_adj_to_edge_index(edge_index)
 
     # Store each node's input and output degree (they're the same for undirected graphs such as Cora)
-    in_degrees = np.zeros(num_of_nodes, dtype=np.int)
-    out_degrees = np.zeros(num_of_nodes, dtype=np.int)
+    in_degrees = np.zeros(num_of_nodes, dtype=int)
+    out_degrees = np.zeros(num_of_nodes, dtype=int)
 
     # Edge index shape = (2, E), the first row contains the source nodes, the second one target/sink nodes
     # Note on terminology: source nodes point to target/sink nodes
