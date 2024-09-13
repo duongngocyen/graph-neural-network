@@ -14,6 +14,12 @@ pip install -r requirements.txt
 python training_script_cora.py --should_visualize --should_test --enable_tensorboard
 ```
 
+## Tracking training and evaluation result
+
+```bash
+tensorboard --logdir runs
+```
+
 ## Reference
 Credit to the main reference: https://github.com/gordicaleksa/pytorch-GAT
 
