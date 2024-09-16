@@ -207,6 +207,7 @@ def get_training_args():
 
     # Dataset related
     parser.add_argument("--dataset_name", choices=[el.name for el in DatasetType], help='dataset to use for training', default=DatasetType.CORA.name)
+    parser.add_argument("--batch_size", type=int, help='number of graphs in a batch', default=2)
     parser.add_argument("--should_visualize", action='store_true', help='should visualize the dataset? (no by default)')
 
     # Logging/debugging/checkpoint related (helps a lot with experimentation)

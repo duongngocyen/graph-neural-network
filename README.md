@@ -10,8 +10,14 @@ pip install -r requirements.txt
 
 ## Train GAT on cora
 
+For CORA:
 ```bash
-python training_script_cora.py --should_visualize --should_test --enable_tensorboard
+python training_script_cora.py --should_visualize --should_test --enable_tensorboard --batch_size 32
+```
+
+For PPI:
+```bash
+python training_script_ppi.py --should_visualize --should_test --enable_tensorboard --num_of_epochs 100 --batch_size 8
 ```
 
 ## Tracking training and evaluation result
